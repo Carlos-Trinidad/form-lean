@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Formulario</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Roboto"
+	rel="stylesheet">
+	<link href="/css/all.css" rel="stylesheet" type="text/css">
+<link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<section class="l-container">
+		<h2 class="header">Formulario</h2>
+		<div class="errorBox " style="display: none" id="errorBox">
+			<div class="errorBox-icon">
+				<i class="fa fa-times"></i>
+			</div>
+			<div class="errorBox-body" id="contenido"></div>
+		</div>
+		<div class="infoBox " style="display:none"  id="infoBox">
+			<div class="infoBox-icon">
+				<i class="fas fa-check"></i>
+			</div>
+			<div class="infoBox-body" id="contenido_info"></div>
+		</div>
+
+		<form class="form">
+			<label class="form__label" for="">Nombre / Apellido</label> <input
+				class="form__input" id="nombre" type="text"
+				placeholder="Ingrese nombre y apellido" /> <span id="nombre_error"></span>
+
+			<label class="form__label" for="">Nro.documento</label> <input
+				class="form__input" id="nrodoc" type="text"
+				placeholder="Ingrese nro. documento" /> <span id="nrodoc_error"></span>
+
+			<label class="form__label" for="">Sueldo nominal</label> <input
+				class="form__input" id="sueldo" type="text"
+				placeholder="Ingrese sueldo nominal" /> <span id="sueldo_error"></span>
+
+			<a class="form__submit is-btn-hovered" onclick="validarForm();">Guardar</a>
+
+		</form>
+	</section>
+		<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
